@@ -1,9 +1,9 @@
 version: '3.8'
 
 services:
-  postgres:
+  postgres_db:
     image: postgres:16-alpine
-    container_name: postgres-shared-db
+    container_name: postgres_db
     restart: unless-stopped
     environment:
       POSTGRES_USER: ${POSTGRES_USER:-postgres}
