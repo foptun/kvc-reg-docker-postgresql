@@ -1,0 +1,67 @@
+# Environment files
+.env
+.env.local
+.env.*.local
+*.env
+
+# PostgreSQL Data directory
+data/
+pgdata/
+
+# PostgreSQL Logs
+logs/
+pg_log/
+*.log
+
+# Backup files
+backup/
+backups/
+*.sql
+*.dump
+*.tar
+*.tar.gz
+*.bak
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Docker volumes data
+**/pgdata/
+
+# PostgreSQL specific
+*.pid
+postmaster.pid
+postgresql.auto.conf
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# Coverage and test files
+coverage/
+.coverage
+*.cover
+.pytest_cache/
+
+# Documentation builds
+docs/_build/
+site/
