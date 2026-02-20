@@ -11,6 +11,7 @@ services:
       POSTGRES_DB: ${POSTGRES_DB:-postgres}
       POSTGRES_INITDB_ARGS: "-E UTF8 --locale=en_US.utf8"
       PGDATA: /var/lib/postgresql/data/pgdata
+      TZ: Asia/Bangkok
     volumes:
       - postgres_data:/var/lib/postgresql/data
       - ./init-scripts:/docker-entrypoint-initdb.d:ro
